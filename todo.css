@@ -1,0 +1,182 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 700
+
+.josefin-sans-<uniquifier> {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 375px;
+    height: 730px;
+    margin-top: 20px;
+}
+header{
+    background-image: url(images.jpg);
+    width: 375px;
+    height: 200px;
+    background-size: cover;
+    justify-items:center ;
+}
+.logoContainer{
+    display: flex;
+    gap: 60%;
+    width: 325px;
+    height: 20px;
+    margin-left: 26px;
+    margin-right: 26px;
+    margin-top: 48px;
+}
+.logoContainer img{
+
+    width: 19.32px; 
+    height: 20px;
+}
+.logoContainer span{
+    color: white; 
+    font-size: 20px;
+    height: 20px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+}
+.addTodoContainer{
+    width: 312px;
+    height: 48px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-left: 24px;
+    margin-right: 24px;
+    display: flex;
+    gap: 5%;
+    /* padding-top: 14px;*/
+    padding-left: 20px;
+    
+    
+}
+
+
+#add_todo, .editInput{
+    height: 12px;
+    width: auto;
+    border-style: none;
+    margin: 14px 20px 14px 0;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+}
+section{
+    background-color: rgba(233, 233, 233, 0.87);
+    width: 375px;
+    
+}
+.todoListContainer{
+    margin-top: -15px;
+}
+    
+.todoListContainer div{
+    display: flex;
+    max-width: 330px;
+    height: 48px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 0px 20px 01px 20px;
+    padding: 0px 20px 0px 20px;
+    justify-content: space-between;
+   
+}
+.todoListContainer div svg{
+    width: 12px;
+    height: 12px;
+    padding-top: 18px;
+    color: rgb(78, 77, 77);
+}
+.todoListContainer div span{
+    width: 180px;
+    height: 12px;
+    padding-top: 18px;
+    font-size: 11px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(78, 77, 77);
+}
+.todoListContainer div input{
+    margin-top: 18px;
+}
+.todoListContainer div .otherButtons{
+    border-style: none;
+    background-color: transparent;
+    box-sizing: content-box;
+    font-size: 11px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(78, 77, 77);
+}
+.line2ru{
+    text-decoration: line-through;
+    color: rgb(148, 146, 146);
+
+}
+.todoListContainer .filterContainer{
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+}
+.filterContainer div{
+    width: 166px;
+    height: 18px;
+    padding-top:15px ;
+}
+.todoListContainer p{
+    font-size: 14px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    height: 14px;
+    width: 327px;
+    text-align: center;
+    margin: 40px 24px 72px 24px;
+    color: rgb(78, 77, 77);
+}
+.checkboxButton, #add_todoButton{
+    width: 20px;
+    height:20px;
+    margin: 14px 20px 14px 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    border:2px solid rgb(78, 77, 77)  ;
+    
+}
+.checkboxButton .checkbox, .checkboxMain{
+    width: 20px;
+    height:20px;
+    
+    margin-left: -8px;
+}
+#submitButton, .changeDisplay{
+    display: none;
+}
