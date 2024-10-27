@@ -221,3 +221,51 @@ function taskCounter() {
     message.textContent = `${length} tasks left`;
   }
 }
+let rangeArray = [];
+function range(first, last, step) {
+  let number = first;
+  if (step >= 1 || step === undefined || step === null) {
+    while (number === first || first < number < last || number === last) {
+      rangeArray.push(number);
+      if (step === undefined || step === null) {
+        number += 1;
+      } else {
+        number += step;
+      }
+
+      if (number > last) {
+        break;
+      }
+    }
+    console.log(rangeArray);
+    return rangeArray;
+  } else if (step < 0 && last > first) {
+    console.log(step);
+    while (number === first || first > number || last >= number) {
+      rangeArray.push(number);
+      number += step;
+      console.log(number);
+      if (last > number) {
+        break;
+      }
+    }
+    console.log(rangeArray);
+  } else {
+    return;
+  }
+}
+function sum(add) {
+  if (typeof add == "object") {
+    let total = 0;
+    let index = 0;
+    while (rangeArray[index] <= rangeArray[rangeArray.length - 1]) {
+      total += rangeArray[index];
+      index += 1;
+    }
+    console.log(total);
+  } else {
+    console.log("the correct type of add is " + typeof add);
+  }
+}
+
+range(5, 10, -1);
